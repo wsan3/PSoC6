@@ -10,7 +10,7 @@
 #include "cyhal.h"
 #include "cybsp.h"
 
-#define ENABLE_SERIAL_DEBUG 0
+#define ENABLE_SERIAL_DEBUG 1
 
 #if ENABLE_SERIAL_DEBUG
 #include "cy_retarget_io.h"

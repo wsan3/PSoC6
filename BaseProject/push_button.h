@@ -15,7 +15,7 @@
 #include "leds.h"
 
 // Pin definitions for the ECE453 Staff Dev board
-#define PIN_PUSH_BUTTON				P5_6 /* ADD CODE */
+#define PIN_PUSH_BUTTON				P5_6
 #define INT_PRIORITY_PUSH_BUTTON	3
 
 // Exported Global Variables

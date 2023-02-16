@@ -18,13 +18,17 @@ void leds_init(void)
 	 * initialize an IO pin an output
 	 */
 
-    cy_rslt_t rslt;
-
-    // Initialize pin P5_5 GPIO as an output with strong drive mode and initial value = false
+	cy_rslt_t rslt;
     rslt = cyhal_gpio_init(PIN_USER_LED, CYHAL_GPIO_DIR_OUTPUT, CYHAL_GPIO_DRIVE_STRONG, false);
-
-    if (rslt != CY_RSLT_SUCCESS) {
-    	//exit(0);
+    if(rslt != CY_RSLT_SUCCESS){
+    	//Something bad happened. Will do putty stuff here
+#if ENABLE_SERIAL_DEBUG
+    		printf("LED INIT FAILED\n\r");
+#endif
+    }else{
+#if ENABLE_SERIAL_DEBUG
+    		printf("LED INIT SUCCESS\n\r");
+#endif
     }
 
 }

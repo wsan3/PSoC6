@@ -10,7 +10,7 @@
 #include "cybsp.h"
 
 // Pin definitions for the ECE453 Staff Dev board
-#define PIN_USER_LED 		P5_5	/* ADD CODE */
+#define PIN_USER_LED P5_5
 
 
 /* Initializes the IO functions */
